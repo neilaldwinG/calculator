@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS smart_calculator;
+USE smart_calculator;
+
+CREATE TABLE IF NOT EXISTS calculations (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    expression VARCHAR(255) NOT NULL,
+    result DECIMAL(20, 8) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
